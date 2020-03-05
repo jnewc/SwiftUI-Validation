@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0481B768240D87BF00F17A05 /* SwiftUI+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481B767240D87BF00F17A05 /* SwiftUI+Validation.swift */; };
+		0481B76E24103ADE00F17A05 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481B76D24103ADE00F17A05 /* Model.swift */; };
 		04B84151240ACE62004AA23B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B84150240ACE62004AA23B /* AppDelegate.swift */; };
 		04B84153240ACE62004AA23B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B84152240ACE62004AA23B /* SceneDelegate.swift */; };
 		04B84155240ACE62004AA23B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B84154240ACE62004AA23B /* ContentView.swift */; };
@@ -14,6 +16,10 @@
 		04B8415A240ACE64004AA23B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B84159240ACE64004AA23B /* Preview Assets.xcassets */; };
 		04B8415D240ACE64004AA23B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B8415B240ACE64004AA23B /* LaunchScreen.storyboard */; };
 		04B84168240ACE64004AA23B /* SwiftUI_ValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B84167240ACE64004AA23B /* SwiftUI_ValidationTests.swift */; };
+		04B84173240BA31A004AA23B /* ValidationPublishers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B84172240BA31A004AA23B /* ValidationPublishers.swift */; };
+		04B84176240BA34C004AA23B /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B84175240BA34C004AA23B /* Validation.swift */; };
+		04B84179240BA53F004AA23B /* Regex in Frameworks */ = {isa = PBXBuildFile; productRef = 04B84178240BA53F004AA23B /* Regex */; };
+		04B8417B240BA575004AA23B /* Publisher+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8417A240BA575004AA23B /* Publisher+Validation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0481B767240D87BF00F17A05 /* SwiftUI+Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI+Validation.swift"; sourceTree = "<group>"; };
+		0481B76D24103ADE00F17A05 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		04B8414D240ACE62004AA23B /* SwiftUI-Validation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Validation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B84150240ACE62004AA23B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04B84152240ACE62004AA23B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +46,9 @@
 		04B84163240ACE64004AA23B /* SwiftUI-ValidationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-ValidationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B84167240ACE64004AA23B /* SwiftUI_ValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ValidationTests.swift; sourceTree = "<group>"; };
 		04B84169240ACE64004AA23B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04B84172240BA31A004AA23B /* ValidationPublishers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationPublishers.swift; sourceTree = "<group>"; };
+		04B84175240BA34C004AA23B /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		04B8417A240BA575004AA23B /* Publisher+Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Validation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B84179240BA53F004AA23B /* Regex in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +70,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0481B76C24103AD400F17A05 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0481B76D24103ADE00F17A05 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		04B84144240ACE62004AA23B = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +99,8 @@
 		04B8414F240ACE62004AA23B /* SwiftUI-Validation */ = {
 			isa = PBXGroup;
 			children = (
+				0481B76C24103AD400F17A05 /* Model */,
+				04B84174240BA341004AA23B /* Validation */,
 				04B84150240ACE62004AA23B /* AppDelegate.swift */,
 				04B84152240ACE62004AA23B /* SceneDelegate.swift */,
 				04B84154240ACE62004AA23B /* ContentView.swift */,
@@ -107,6 +129,17 @@
 			path = "SwiftUI-ValidationTests";
 			sourceTree = "<group>";
 		};
+		04B84174240BA341004AA23B /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				04B84175240BA34C004AA23B /* Validation.swift */,
+				04B84172240BA31A004AA23B /* ValidationPublishers.swift */,
+				04B8417A240BA575004AA23B /* Publisher+Validation.swift */,
+				0481B767240D87BF00F17A05 /* SwiftUI+Validation.swift */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,6 +156,9 @@
 			dependencies = (
 			);
 			name = "SwiftUI-Validation";
+			packageProductDependencies = (
+				04B84178240BA53F004AA23B /* Regex */,
+			);
 			productName = "SwiftUI-Validation";
 			productReference = 04B8414D240ACE62004AA23B /* SwiftUI-Validation.app */;
 			productType = "com.apple.product-type.application";
@@ -173,6 +209,9 @@
 				Base,
 			);
 			mainGroup = 04B84144240ACE62004AA23B;
+			packageReferences = (
+				04B84177240BA53F004AA23B /* XCRemoteSwiftPackageReference "Regex" */,
+			);
 			productRefGroup = 04B8414E240ACE62004AA23B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -209,8 +248,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				04B84151240ACE62004AA23B /* AppDelegate.swift in Sources */,
+				04B84173240BA31A004AA23B /* ValidationPublishers.swift in Sources */,
 				04B84153240ACE62004AA23B /* SceneDelegate.swift in Sources */,
+				04B84176240BA34C004AA23B /* Validation.swift in Sources */,
 				04B84155240ACE62004AA23B /* ContentView.swift in Sources */,
+				04B8417B240BA575004AA23B /* Publisher+Validation.swift in Sources */,
+				0481B768240D87BF00F17A05 /* SwiftUI+Validation.swift in Sources */,
+				0481B76E24103ADE00F17A05 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +517,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04B84177240BA53F004AA23B /* XCRemoteSwiftPackageReference "Regex" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:crossroadlabs/Regex.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04B84178240BA53F004AA23B /* Regex */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04B84177240BA53F004AA23B /* XCRemoteSwiftPackageReference "Regex" */;
+			productName = Regex;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 04B84145240ACE62004AA23B /* Project object */;
 }
